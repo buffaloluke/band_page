@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital@1&family=Luckiest+Guy&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"); */
+
+/*gilt für alle Elemente*/
+
+body {
+  /* default margin und padding entfernen */
+  margin: 0;
+  padding: 0;
+  background: url("../img/top.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #24252a;
+
+  /*min-height: 100vh; */
+}
+
+header {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* .container {
+  font-family: "Sansita+Swashed", sans-serif;
+} */
+
+h1 {
+  font-family: "Luckiest Guy", sans-serif;
+  /* color: #8d1930; */
+  font-size: 70px;
+  margin-left: 50px;
+}
+
+h1 a {
+  /*keine Linie unterhalb Link*/
+  text-decoration: none;
+  color: #8d1930;
+}
+
+h2,
+li,
+p {
+  font-family: "Grandstander", sans-serif;
+  color: white;
+}
+
+nav {
+  /* 100% der Bildschirmbreite für Navigationsleiste verwenden */
+  width: 100vw;
+}
+
+nav ul {
+  /* default margin und padding entfernen */
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  /*this option by default dispose the elements in a row (flex-direction: row)*/
+  display: flex;
+}
+
+/* 1. Entweder display: flex im ul-Element ODER display: inline-block im li-Element */
+/* 2. Entweder list-style: none im ul-Element ODER list-style-type: none im li-Element */
+/* list-style is the shorthand to set list-style-type, list-style-position and list-style-image properties all in one declaration */
+
+nav li {
+  /* display: inline-block; */
+  list-style-type: none;
+  margin: 0 4vw;
+  font-size: 5vh;
+}
+
+nav a {
+  /*keine Linie unterhalb Link*/
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  /* padding: 2vw; */
+}
+
+nav a:hover {
+  color: #8d1930;
+}
+
+nav .current {
+  color: #8d1930;
+}
+
+main {
+  margin: 0 4vw 0 4vw; /* top right bottom left */
+}
