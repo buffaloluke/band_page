@@ -87,3 +87,19 @@ nav .current {
 main {
   margin: 0 4vw 0 4vw; /* top right bottom left */
 }
+
+.smicons {
+  height: 50px;
+  width: 50px;
+}
+
+ion-icon {
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+#links {
+  float: right;
+  margin: 0 4vw 0 4vw; /* top right bottom left */
+}
