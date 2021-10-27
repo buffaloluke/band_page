@@ -133,7 +133,31 @@ ion-icon {
   height: 0;
 }
 
-iframe{
+.iframe-container1 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-container2 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-container3 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-container4 iframe{
   position: absolute;
   top:0;
   left: 0;
