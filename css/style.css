@@ -103,6 +103,6 @@ ion-icon {
   float: right;
   margin: 0 4vw 0 4vw; /* top right bottom left */
 }
-#message {
+#message, input , a {
   display: block;
 }
