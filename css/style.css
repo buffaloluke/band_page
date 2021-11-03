@@ -103,65 +103,102 @@ ion-icon {
   float: right;
   margin: 0 4vw 0 4vw; /* top right bottom left */
 }
-#message, input , a {
+
+a:hover ion-icon {
+  color: #8d1930;
+}
+
+#message,
+input {
   display: block;
 }
 
-.iframe-container1{
+.media-link-container li {
+  list-style-type: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.media-link-container li:hover {
+  color: #8d1930;
+  border: 1px solid #8d1930;
+}
+
+.media-link-container a:hover {
+  color: #8d1930;
+}
+
+.media-link-container {
+  margin-top: 6vh;
+}
+
+.media-link-container a {
+  font-family: "Luckiest Guy", sans-serif;
+  margin-bottom: 2vh;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.iframe-container1 {
   position: relative;
   width: 100%;
-  padding-bottom: 25%; 
+  padding-bottom: 25%;
   height: 0;
 }
 
-.iframe-container2{
+.iframe-container2 {
   position: relative;
   width: 100%;
-  padding-bottom: 20%; 
+  padding-bottom: 20%;
   height: 0;
 }
-.iframe-container3{
+.iframe-container3 {
   position: relative;
   width: 100%;
-  padding-bottom: 20%; 
+  padding-bottom: 20%;
   height: 0;
 }
-.iframe-container4{
+.iframe-container4 {
   position: relative;
   width: 100%;
-  padding-bottom: 20%; 
+  padding-bottom: 20%;
   height: 0;
 }
 
-.iframe-container1 iframe{
+.iframe-container1 iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.iframe-container2 iframe{
+.iframe-container2 iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.iframe-container3 iframe{
+.iframe-container3 iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.iframe-container4 iframe{
+.iframe-container4 iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
