@@ -99,7 +99,13 @@ ion-icon {
   width: 30px;
 }
 
-#links {
+.fab {
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.media-links {
   float: right;
   margin: 0 4vw 0 4vw; /* top right bottom left */
 }
@@ -113,36 +119,13 @@ input {
   display: block;
 }
 
-.media-link-container li {
-  list-style-type: none;
-  margin: 10px 30px;
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px 20px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.media-link-container li:hover {
+/* .media-links li:hover {
   color: #8d1930;
   border: 1px solid #8d1930;
-}
+} */
 
-.media-link-container a:hover {
+.media-links a:hover {
   color: #8d1930;
-}
-
-.media-link-container {
-  margin-top: 6vh;
-}
-
-.media-link-container a {
-  font-family: "Luckiest Guy", sans-serif;
-  margin-bottom: 2vh;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .iframe-container1 {
