@@ -36,6 +36,12 @@ h1 a {
   color: #8d1930;
 }
 
+h2 a {
+  /*keine Linie unterhalb Link*/
+  text-decoration: none;
+  color: #8d1930;
+}
+
 h2,
 li,
 p {
