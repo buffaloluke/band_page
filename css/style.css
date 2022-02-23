@@ -1,7 +1,13 @@
+/*
+  Author: Lukas Pacher - Radiant Designs.
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Grandstander:ital@1&family=Luckiest+Guy&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"); */
 
-/*gilt für alle Elemente*/
+html {
+  font-family: "Luckiest Guy", sans-serif;
+}
 
 body {
   /* default margin und padding entfernen */
@@ -15,19 +21,15 @@ body {
   /*min-height: 100vh; */
 }
 
+/*1em = 16px */
+
 header {
   border-bottom: 1px solid #ffffff;
 }
 
-/* .container {
-  font-family: "Sansita+Swashed", sans-serif;
-} */
-
 h1 {
-  font-family: "Luckiest Guy", sans-serif;
-  /* color: #8d1930; */
-  font-size: 70px;
-  margin-left: 50px;
+  font-size: 8vh;
+  margin-left: 3vw;
 }
 
 h1 a {
@@ -61,6 +63,7 @@ nav ul {
   /* list-style: none; */
   /*this option by default dispose the elements in a row (flex-direction: row)*/
   display: flex;
+  justify-content: center;
 }
 
 /* 1. Entweder display: flex im ul-Element ODER display: inline-block im li-Element */
@@ -134,64 +137,51 @@ input {
   color: #8d1930;
 }
 
-.iframe-container1 {
-  position: relative;
-  width: 100%;
-  padding-bottom: 25%;
-  height: 0;
+.flexbox-sp {
+  width: 80%;
+  background: #dadada;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /*Zeilenumbruch*/
+  justify-content: space-between;
 }
 
-.iframe-container2 {
-  position: relative;
+.flexelement-sp {
   width: 100%;
-  padding-bottom: 20%;
-  height: 0;
-}
-.iframe-container3 {
-  position: relative;
-  width: 100%;
-  padding-bottom: 20%;
-  height: 0;
-}
-.iframe-container4 {
-  position: relative;
-  width: 100%;
-  padding-bottom: 20%;
-  height: 0;
+  padding: 15px 0 15px 0;
 }
 
-.iframe-container1 iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.flexbox {
+  width: 80%;
+  background: #dadada;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*Zeilenumbruch*/
+  justify-content: space-between;
+}
+
+.flexelement {
+  width: 50%;
+  padding: 15px 0 15px 0;
+}
+
+.flexelement-sp iframe {
+  width: 50%;
   height: 100%;
 }
 
-.iframe-container2 iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container3 iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container4 iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.flexelement iframe {
+  width: 95%;
   height: 100%;
 }
 
 #status {
   color: #ffffff;
+}
+
+.pagewrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 0.5em;
 }
