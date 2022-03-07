@@ -51,12 +51,30 @@ p {
   color: white;
 }
 
-nav {
+.container2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+#title {
+  width: 90%;
+}
+#social {
+  width: 10%;
+}
+
+#social nav {
+  margin-top: 3vh;
+}
+/* ***************************** */
+
+#navbar nav {
   /* 100% der Bildschirmbreite für Navigationsleiste verwenden */
   width: 100vw;
 }
 
-nav ul {
+#navbar ul {
   /* default margin und padding entfernen */
   margin: 0;
   padding: 0;
@@ -70,14 +88,14 @@ nav ul {
 /* 2. Entweder list-style: none im ul-Element ODER list-style-type: none im li-Element */
 /* list-style is the shorthand to set list-style-type, list-style-position and list-style-image properties all in one declaration */
 
-nav li {
+#navbar li {
   /* display: inline-block; */
   list-style-type: none;
   margin: 0 4vw;
   font-size: 5vh;
 }
 
-nav a {
+#navbar nav a {
   /*keine Linie unterhalb Link*/
   text-decoration: none;
   color: #ffffff;
@@ -85,11 +103,11 @@ nav a {
   /* padding: 2vw; */
 }
 
-nav a:hover {
+#navbar nav a:hover {
   color: #8d1930;
 }
 
-nav .current {
+#navbar nav .current {
   color: #8d1930;
 }
 
@@ -97,29 +115,11 @@ main {
   margin: 0 4vw 0 4vw; /* top right bottom left */
 }
 
-.smicons {
-  height: 50px;
-  width: 50px;
-}
-
-ion-icon {
-  color: white;
-  height: 30px;
-  width: 30px;
-}
-
 .fab {
   color: white;
-  height: 30px;
-  width: 30px;
 }
 
-.media-links {
-  float: right;
-  margin: 0 4vw 0 4vw; /* top right bottom left */
-}
-
-a:hover ion-icon {
+a:hover i {
   color: #8d1930;
 }
 
@@ -149,6 +149,7 @@ input {
 .flexelement-sp {
   width: 100%;
   padding: 15px 0 15px 0;
+  flex: 1;
 }
 
 .flexbox {
