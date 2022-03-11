@@ -25,6 +25,15 @@ body {
 
 header {
   border-bottom: 1px solid #ffffff;
+
+  overflow: hidden;
+  background-color: #0a0603;
+  /* padding: 90px 10px; */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
 }
 
 h1 {
@@ -112,7 +121,7 @@ p {
 }
 
 main {
-  margin: 0 4vw 0 4vw; /* top right bottom left */
+  margin: 30vh 4vw 0 4vw; /* top right bottom left */
 }
 
 .fab {
@@ -144,7 +153,15 @@ input {
   flex-direction: column;
   flex-wrap: wrap; /*Zeilenumbruch*/
   justify-content: space-between;
+  align-items: stretch; /*strech ist der default-Wert*/
 }
+
+/* Einstellungen Flexcontainer (Flexbox)
+   justify-content: wie werden die Elemente auf der horizontalen Achse innerhalb des Flexcontainers ausgerichtet
+   align-items: wie werden die Elemente auf der vertikalen Achse innerhalb des Flexcontainers ausgerichtet
+   flex-wrap: wrap => die Flexelement werden in neue Zeilen verschoben wenn Fenster kleiner wird
+              nowrap = > die Flexelement schrumpfen und wachsen mit der Größe des Fensters mit
+*/
 
 .flexelement-sp {
   width: 100%;
